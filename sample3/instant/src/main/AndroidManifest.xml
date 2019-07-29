@@ -29,21 +29,17 @@
                  android:theme="@style/Topeka"
                  tools:ignore="s,UnusedAttribute">
 
-        <!--<activity android:name=".activity.SignInActivity"-->
-                  <!--android:theme="@style/Topeka.SignInActivity"-->
-                  <!--android:windowSoftInputMode="adjustPan">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+        <activity android:name=".activity.SignInActivity"
+                  android:theme="@style/Topeka.SignInActivity"
+                  android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".activity.CategorySelectionActivity"
-                  android:theme="@style/Topeka.CategorySelectionActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                  android:theme="@style/Topeka.CategorySelectionActivity" />
 
         <activity android:name=".activity.QuizActivity"
                   android:launchMode="singleTop"
