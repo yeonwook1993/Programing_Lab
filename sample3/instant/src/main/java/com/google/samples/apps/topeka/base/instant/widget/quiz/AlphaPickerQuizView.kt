@@ -23,7 +23,7 @@ import android.view.View
 import android.widget.ScrollView
 import android.widget.SeekBar
 import android.widget.TextView
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.model.Category
 import com.google.samples.apps.topeka.base.instant.model.quiz.AlphaPickerQuiz
 import com.google.samples.apps.topeka.base.instant.widget.SeekBarListener

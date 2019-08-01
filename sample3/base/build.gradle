@@ -36,7 +36,6 @@ dependencies {
     api "com.android.support:support-v4:$supportLibVersion"
     api 'com.google.android.instantapps:instantapps:1.1.0'
     api "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
-    api "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
     api "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
 
     feature project(":instant")

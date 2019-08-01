@@ -22,7 +22,7 @@ import android.util.AttributeSet
 import android.view.View
 import android.widget.Checkable
 
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 
 /**
  * A [FloatingActionButton] that implements [Checkable] to allow display of different

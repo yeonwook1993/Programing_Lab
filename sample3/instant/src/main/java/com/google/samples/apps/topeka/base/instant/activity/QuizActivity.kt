@@ -41,7 +41,7 @@ import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.fragment.QuizFragment
 import com.google.samples.apps.topeka.base.instant.helper.ActivityLaunchHelper
 import com.google.samples.apps.topeka.base.instant.helper.ApiLevelHelper
@@ -49,9 +49,6 @@ import com.google.samples.apps.topeka.base.instant.helper.FOREGROUND_COLOR
 import com.google.samples.apps.topeka.base.instant.helper.database
 import com.google.samples.apps.topeka.base.instant.helper.findFragmentById
 import com.google.samples.apps.topeka.base.instant.helper.findFragmentByTag
-import com.google.samples.apps.topeka.base.instant.helper.isLoggedIn
-import com.google.samples.apps.topeka.base.instant.helper.onSmartLockResult
-import com.google.samples.apps.topeka.base.instant.helper.requestLogin
 import com.google.samples.apps.topeka.base.instant.model.Category
 import com.google.samples.apps.topeka.base.instant.model.JsonAttributes
 import com.google.samples.apps.topeka.base.instant.widget.TextSharedElementCallback
@@ -122,8 +119,6 @@ class QuizActivity : AppCompatActivity() {
                                 .alpha(1f)
                     }
                 })
-
-        if (!isLoggedIn()) requestLogin {}
     }
 
     @SuppressLint("NewApi")
@@ -197,8 +192,7 @@ class QuizActivity : AppCompatActivity() {
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        onSmartLockResult(requestCode, resultCode, data,
-                success = {}, failure = { requestLogin {} })
+
         super.onActivityResult(requestCode, resultCode, data)
     }
 

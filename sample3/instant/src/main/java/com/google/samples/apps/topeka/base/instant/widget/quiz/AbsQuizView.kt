@@ -39,7 +39,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.activity.QuizActivity
 import com.google.samples.apps.topeka.base.instant.helper.ApiLevelHelper
 import com.google.samples.apps.topeka.base.instant.helper.FOREGROUND_COLOR

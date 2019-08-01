@@ -111,7 +111,7 @@
         <item name="android:background">@drawable/selector_false</item>
     </style>
 
-    <style name="Topeka.TextAppearance" />
+    <style name="Topeka.TextAppearance" tools:keep="@style/Topeka_TextAppearance" />
 
     <style name="Topeka.TextAppearance.CategoryItem" parent="TextAppearance.AppCompat.Small">
         <item name="android:textSize">@dimen/category_item_text_size</item>
@@ -129,7 +129,7 @@
         <item name="android:textSize">96sp</item>
     </style>
 
-    <style name="Topeka.TextAppearance.Subhead" parent="TextAppearance.AppCompat.Subhead">
+    <style name="Topeka.TextAppearance.Subhead" parent="TextAppearance.AppCompat.Subhead" tools:keep="@style/Topeka_TextAppearance_Subhead">
         <item name="android:textColor">@color/topeka_primary</item>
     </style>
 

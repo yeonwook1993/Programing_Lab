@@ -30,14 +30,13 @@ import android.widget.AdapterViewAnimator
 import android.widget.ListView
 import android.widget.ProgressBar
 import android.widget.TextView
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.adapter.QuizAdapter
 import com.google.samples.apps.topeka.base.instant.adapter.ScoreAdapter
 import com.google.samples.apps.topeka.base.instant.helper.ApiLevelHelper
 import com.google.samples.apps.topeka.base.instant.helper.database
 import com.google.samples.apps.topeka.base.instant.helper.inflate
 import com.google.samples.apps.topeka.base.instant.helper.onLayoutChange
-import com.google.samples.apps.topeka.base.instant.helper.requestLogin
 import com.google.samples.apps.topeka.base.instant.model.Category
 import com.google.samples.apps.topeka.base.instant.widget.AvatarView
 import com.google.samples.apps.topeka.base.instant.widget.quiz.AbsQuizView
@@ -92,7 +91,6 @@ class QuizFragment : Fragment() {
         setProgress(category.firstUnsolvedQuizPosition)
         decideOnViewToDisplay()
         setQuizViewAnimations()
-        setAvatarDrawable()
         super.onViewCreated(view, savedInstanceState)
     }
 
@@ -126,20 +124,7 @@ class QuizFragment : Fragment() {
         }
     }
 
-    private fun setAvatarDrawable(avatarView: AvatarView? = view?.findViewById(R.id.avatar)) {
-        activity?.requestLogin { player ->
-                if (player.valid()) {
-                    avatarView?.setAvatar(player.avatar!!.drawableId)
-                    with(ViewCompat.animate(avatarView)) {
-                        interpolator = FastOutLinearInInterpolator()
-                        startDelay = 500
-                        scaleX(1f)
-                        scaleY(1f)
-                        start()
-                    }
-                }
-            }
-        }
+
 
     private fun setProgress(currentQuizPosition: Int) {
         if (isAdded) {

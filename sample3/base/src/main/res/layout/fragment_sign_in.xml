@@ -16,9 +16,9 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
-             android:id="@+id/fragment_sign_in_content"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    tools:keep="@layout/fragment_sign_in">
 
     <ProgressBar
             android:id="@+id/empty"

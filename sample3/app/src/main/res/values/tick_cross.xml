@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- geometry -->
     <integer name="viewport_width">24</integer>
@@ -36,6 +36,6 @@
     <color name="tick_cross_stroke_color">@android:color/black</color>
 
     <!-- timing -->
-    <integer name="tick_cross_duration">450</integer>
+    <integer name="tick_cross_duration" tools:keep="@integer/tick_cross_duration">450</integer>
 
 </resources>

@@ -7,7 +7,6 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.app.ActivityOptionsCompat
 import com.google.samples.apps.topeka.base.instant.activity.CategorySelectionActivity
 import com.google.samples.apps.topeka.base.instant.activity.QuizActivity
-import com.google.samples.apps.topeka.base.instant.activity.SignInActivity
 import com.google.samples.apps.topeka.base.instant.model.Category
 
 class ActivityLaunchHelper {
@@ -25,21 +24,12 @@ class ActivityLaunchHelper {
             }
         }
 
-        fun launchSignIn(activity: Activity, edit: Boolean = false) {
-            ActivityCompat.startActivity(activity,
-                    signInIntent(activity, edit),
-                    ActivityOptionsCompat.makeSceneTransitionAnimation(activity).toBundle())
-        }
-
         fun categorySelectionIntent(context: Context? = null) =
                 baseIntent(CategorySelectionActivity::class.java, context)
 
         fun quizIntent(category: Category, context: Context? = null) =
                 baseIntent(QuizActivity::class.java, context).apply {
                     putExtra(Category.TAG, category.id) }
-
-        fun signInIntent(context: Context? = null, edit: Boolean = false): Intent =
-                baseIntent(SignInActivity::class.java, context).putExtra(EXTRA_EDIT, edit)
 
         private fun baseIntent(activityClass: Class<out Activity>, context: Context? = null): Intent {
             return Intent(context, activityClass)

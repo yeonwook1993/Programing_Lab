@@ -17,7 +17,8 @@
 <android.support.design.widget.FloatingActionButton
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/done"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/done"
         app:fabSize="normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,4 +27,5 @@
         android:layout_marginEnd="@dimen/spacing_double"
         android:layout_marginRight="@dimen/spacing_double"
         android:src="@drawable/ic_tick"
-        app:backgroundTint="@color/topeka_primary" />
+        app:backgroundTint="@color/topeka_primary"
+    tools:keep="@layout/fab_done" />

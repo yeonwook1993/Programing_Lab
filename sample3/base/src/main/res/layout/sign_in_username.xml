@@ -19,11 +19,11 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+    tools:keep="@layout/sign_in_username">
 
     <TextView
-            android:id="@+id/toolbar_sign_in"
-            android:layout_width="match_parent"
+        android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
             style="@style/Topeka.TextAppearance.Title"
             android:elevation="@dimen/elevation_header"

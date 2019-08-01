@@ -14,10 +14,11 @@
   ~ limitations under the License.
   -->
 
-<com.google.samples.apps.topeka.base.instant.widget.AvatarView
-        android:id="@+id/avatar"
+<com.google.samples.apps.topeka.base.instant.widget.AvatarView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/avatar"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="@dimen/size_fab"
         android:layout_height="@dimen/size_fab"
         android:layout_gravity="center"
-        android:contentDescription="@string/an_avatar" />
+        android:contentDescription="@string/an_avatar"
+    tools:keep="@layout/item_avatar" />

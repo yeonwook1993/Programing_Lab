@@ -24,7 +24,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.GridView
 
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.adapter.OptionsQuizAdapter
 import com.google.samples.apps.topeka.base.instant.helper.ApiLevelHelper
 import com.google.samples.apps.topeka.base.instant.helper.onLayoutChange

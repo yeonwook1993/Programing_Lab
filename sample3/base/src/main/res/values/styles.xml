@@ -37,7 +37,6 @@
 
     <style name="Topeka.CategorySelectionActivity" />
     <style name="Topeka.QuizActivity" />
-    <style name="Topeka.SignInActivity" />
 
     <style name="Topeka.Blue">
         <item name="colorPrimary">@color/theme_blue_primary</item>
@@ -111,8 +110,6 @@
         <item name="android:background">@drawable/selector_false</item>
     </style>
 
-    <style name="Topeka.TextAppearance" />
-
     <style name="Topeka.TextAppearance.CategoryItem" parent="TextAppearance.AppCompat.Small">
         <item name="android:textSize">@dimen/category_item_text_size</item>
     </style>
@@ -127,10 +124,6 @@
 
     <style name="Topeka.TextAppearance.Title.Picker" parent="Topeka.TextAppearance.Title">
         <item name="android:textSize">96sp</item>
-    </style>
-
-    <style name="Topeka.TextAppearance.Subhead" parent="TextAppearance.AppCompat.Subhead">
-        <item name="android:textColor">@color/topeka_primary</item>
     </style>
 
     <style name="Topeka.TextAppearance.ListItem" parent="TextAppearance.AppCompat.Subhead" />

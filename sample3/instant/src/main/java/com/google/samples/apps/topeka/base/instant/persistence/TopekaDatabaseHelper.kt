@@ -23,7 +23,7 @@ import android.content.res.Resources
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.helper.toIntArray
 import com.google.samples.apps.topeka.base.instant.helper.toStringArray
 import com.google.samples.apps.topeka.base.instant.model.Category

@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <dimen name="spacing_nano">2dp</dimen>
     <dimen name="spacing_micro">4dp</dimen>
     <dimen name="spacing_normal">8dp</dimen>
@@ -32,6 +32,6 @@
 
     <dimen name="stroke_width_avatar">4dp</dimen>
 
-    <dimen name="size_edit_text">18sp</dimen>
+    <dimen name="size_edit_text" tools:keep="@dimen/size_edit_text">18sp</dimen>
     <dimen name="category_item_text_size">14sp</dimen>
 </resources>

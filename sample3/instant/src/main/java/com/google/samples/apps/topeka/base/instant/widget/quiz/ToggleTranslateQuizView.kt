@@ -24,7 +24,7 @@ import android.widget.AbsListView
 import android.widget.AdapterView
 import android.widget.Checkable
 import android.widget.ListView
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 import com.google.samples.apps.topeka.base.instant.adapter.OptionsQuizAdapter
 import com.google.samples.apps.topeka.base.instant.helper.AnswerHelper
 import com.google.samples.apps.topeka.base.instant.model.Category

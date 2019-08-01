@@ -34,11 +34,6 @@
         <item name="android:windowSharedElementEnterTransition">@transition/quiz_shared_enter</item>
     </style>
 
-    <style name="Topeka.SignInActivity">
-        <item name="android:windowEnterTransition">@transition/signin_enter</item>
-        <item name="android:windowExitTransition">@transition/signin_exit</item>
-    </style>
-
 
     <style name="Topeka.ActionButton" parent="Widget.AppCompat.ActionButton.Overflow">
         <item name="android:tint">@color/light_grey</item>

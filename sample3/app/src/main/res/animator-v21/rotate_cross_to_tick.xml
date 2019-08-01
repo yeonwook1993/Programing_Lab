@@ -16,8 +16,10 @@
 
 <objectAnimator
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:propertyName="rotation"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:propertyName="rotation"
         android:valueFrom="-180"
         android:valueTo="0"
         android:duration="@integer/tick_cross_duration"
-        android:interpolator="@android:interpolator/fast_out_slow_in" />
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+    tools:keep="@animator/rotate_cross_to_tick" />

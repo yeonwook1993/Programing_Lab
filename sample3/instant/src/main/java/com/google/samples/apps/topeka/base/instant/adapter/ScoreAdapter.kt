@@ -30,7 +30,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.google.samples.apps.topeka.base.instant.helper.inflate
 import com.google.samples.apps.topeka.base.instant.model.Category
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 
 /**
  * Adapter for displaying score cards.

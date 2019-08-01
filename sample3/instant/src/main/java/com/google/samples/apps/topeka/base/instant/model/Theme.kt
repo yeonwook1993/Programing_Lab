@@ -18,7 +18,7 @@ package com.google.samples.apps.topeka.base.instant.model
 
 import android.support.annotation.ColorRes
 import android.support.annotation.StyleRes
-import com.google.samples.apps.topeka.base.instant.R
+import com.google.samples.apps.topeka.base.R
 
 /**
  * A way to make simple changes to the application's appearance at runtime in correlation to its
